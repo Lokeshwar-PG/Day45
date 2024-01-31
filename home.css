@@ -22,7 +22,7 @@ h1 {
 main {
     background: #f7f7f7;
     padding: 2em 14% 1em;
-    
+    min-height: calc(100vh - 80px);
 }
 
 .header-content {
@@ -43,4 +43,49 @@ main {
     cursor: pointer;
     text-decoration: none;
     /* letter-spacing: 0px; */
+}
+
+table {
+    width: 100%;
+    border-spacing: 0 3px;
+    border-collapse: separate;
+    margin-top: 25px;
+}
+
+th {
+    background: #42515f;
+    text-align: left;
+    padding: 5px 8px;
+    border-radius: 3px 3px 0px 0px;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+tr:not(first-child) {
+    background: white;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+}
+
+td {
+    padding: 8px 8px;
+}
+
+td:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+.dept-label {
+    background-color: #e9fea5;
+    text-align: center;
+    width: fit-content;
+    border-radius: 40%;
+    padding: 1px 7px;
+    display: inline-block;
+}
+
+.icon {
+   margin-left: 10px;
 }
