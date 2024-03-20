@@ -25,10 +25,11 @@ function onSubmitClick() {
 
     localStorage.setItem(name, JSON.stringify(userDetails));
     alert("Saved");
+    window.location.href = "./home.html";
 }
 
-function loadDate() {
-    var name = document.getElementById("name").value;
+function loadData(employeeName) {
+    var name = employeeName ? employeeName : document.getElementById("name").value;
     var userDetails = localStorage.getItem(name);
     var userDetails = JSON.parse(userDetails);
 
